@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <title>Brick Breaker</title>
+    <link rel="stylesheet" href="http://fonts.gooleapis.com/css?family=Germania+One">
+    
+    <style>
+        *{
+            font-family: "Germania One";
+        }
+        #sound{
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+            position: absolute;
+            top: 465px;
+            left: 15px;
+        }
+        #gameover{
+            position: absolute;
+            width: 400px;
+            height: 500px;
+            background: rgba(0,0,0,5);
+            display: none;
+        }
+        #youwon{
+            width: 100px;
+            position: absolute;
+            top: 200px;
+            left: 150px;
+            display: none;
+        }
+        #youlose{
+            width: 400px;
+            position: absolute;
+            top: 100px;
+            left: 0px;
+            display: none;
+        }
+        #restart{
+            position: absolute;
+            top: 310px;
+            left: 155px;
+            cursor: pointer;
+            font-size: 1.25cm;
+            color: #FFF;
+        }
+    </style>
+    </head>
+    <body>
+        <div class="sound">
+            <img src="images/SOUND_ON.png" alt="" id="sound">
+        </div>
+    <div>
+
+        </div id="gameover">
+        <img src= "images/youwon.png" alt="youwon">
+        <img src="images/gameover.png" alt="youlose">
+        <img id="restart">Play Again!</div>
+    </div>
+    <canvas id="brickbreaker" width="400" height="500"></canvas>
+    <script src= "components.js" ></script>
+    <script src= "game.js" ></script>
+
+    </body>
+</html>
